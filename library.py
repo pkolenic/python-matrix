@@ -129,3 +129,11 @@ def find_and_format_solution_to_a_system_of_equations_via_conversion_to_triangul
         # Join the list of strings
         return f"solution = ({', '.join(formatted_solution)})"
     return "No solution."
+
+def solve_with_triangular_form(matrix: list) -> str:
+    """
+    An alias for find_and_format_solution_to_a_system_of_equations_via_conversion_to_triangular_form.
+    :param matrix: An m x n matrix representing a system of equations
+    :return: The formatted solution for the system of equations.
+    """
+    return find_and_format_solution_to_a_system_of_equations_via_conversion_to_triangular_form(matrix)
